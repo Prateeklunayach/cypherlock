@@ -1,24 +1,12 @@
 import { useState } from 'react'
-
+import Navbar from './Navbar'
 function Blog() {
   return (
     <div className="min-h-screen bg-purple-200">
-      <header className="sticky top-0 container mx-auto px-4 py-6 flex justify-between items-center shadow-lg rounded-2xl bg-purple-200">
-        <img src="/logo.png" alt="Logo" className="h-12 w-auto" />
-        <nav className="flex items-center space-x-6">
-          <a href="#" className="text-gray-800">Home</a>
-          <a href="#" className="text-gray-800">About Us</a>
-          <a href="#" className="text-gray-800">Events</a>
-          <a href="#" className="text-gray-800">Blogs</a>
-          <a href="#" className="text-gray-800">Our Team</a>
-          <a href="#" className="text-gray-800">Contact us</a>
-          <button className="bg-gray-300 text-gray-800 px-4 py-2 rounded-full">Join us!</button>
-          <button className="bg-gray-800 text-white px-4 py-2 rounded-full">Login</button>
-        </nav>
-      </header>
+       <Navbar />
 
       <main className="container mx-auto px-4 py-12 text-center">
-        <h1 className="text-6xl font-bold mb-8">Recent Blog</h1>
+        <h1 className="text-6xl font-bold mb-12 mt-20">Recent Blog</h1>
     
         <p className="text-xl mb-10 max-w-7xl mx-auto">
           Get the latest updates and dive deeper into cybersecurity and blockchain knowledge with CypherLock Club. Stay
