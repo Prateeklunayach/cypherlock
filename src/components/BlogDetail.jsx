@@ -78,8 +78,8 @@ const BlogDetail = () => {
 
   return (
     <div className="min-h-screen bg-purple-200">
-      <Navbar img={cypherLockLogo} />
-      
+      <Navbar logo ="/logo.png" />
+     
       <main className="container mx-auto px-4 py-12 max-w-5xl">
         <button 
           onClick={() => navigate(-1)}
