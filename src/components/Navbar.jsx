@@ -6,6 +6,8 @@ function Navbar() {
       window.location.href = '/';
     } else if (item === 'Home') {
       window.location.href = '/Home';
+    } else if (item === 'Team') {
+      window.location.href = '/team';
     }
   };
 
@@ -23,7 +25,7 @@ function Navbar() {
                 href={`#${item.toLowerCase()}`}
                 className="text-white hover:text-gray-300 transition-colors"
                 onClick={(e) => {
-                  if (item === 'Blogs' || item === 'Home') {
+                  if (item === 'Blogs' || item === 'Home' || item === 'Team') {
                     e.preventDefault();
                     handleNavClick(item);
                   }
